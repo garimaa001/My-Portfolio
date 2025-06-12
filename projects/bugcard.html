@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug-Typing Game - Project Details</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1 class="logo">MY PORTFOLIO</h1>
+            <nav>
+                
+                <ul>
+                 
+                    <a href="../index.html#contact">● Connect</a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main class="project-detail-main">
+        <section id="bug-typing-project" class="project-section-detail">
+            <h1><u><strong>BUG-TYPING</strong></u></h1>
+
+            
+
+            <div class="project-summary">
+                <p>The Bug-Typing Game is a full-stack, interactive web application designed to enhance typing speed and accuracy. It provides a dynamic and engaging platform for users to improve their typing skills by practicing with randomized sentences and receiving real-time performance feedback.</p>
+            </div>
+
+            <h2><u>Key Features</u></h2>
+            <ul>
+                <li>**Randomized Sentence Generation:** Fetches diverse and fresh sentences from a backend API, ensuring a new typing challenge each time.</li>
+                <li>**Real-time Typing Feedback:** Provides immediate visual cues for correct and incorrect characters as the user types.</li>
+                <li>**WPM & Accuracy Calculation:** Precisely calculates your Words Per Minute (WPM) and typing accuracy percentage upon test completion.</li>
+                <li>**Timer-Based Tests:** Offers a time-constrained testing environment (e.g., 30 seconds) to simulate practical typing scenarios.</li>
+                <li>**Score Tracking:** Integrates with a MongoDB backend to save and retrieve user scores, allowing for progress monitoring.</li>
+                <li>**Anti-Cheating Measures:** Disables browser typing suggestions, autocorrect, and prevents copy-pasting to ensure fair and accurate test results.</li>
+                <li>**Responsive Design:** Optimized for a consistent and smooth user experience across various devices and screen sizes.</li>
+            </ul>
+
+            <h2><u>Technologies Used</u></h2>
+            <div class="tech-stack">
+                <h3>Frontend:</h3>
+                <ul>
+                    <li>**React.js:** Used for building the dynamic and responsive user interface.</li>
+                    <li>**HTML5:** Provides the foundational structure of the web pages.</li>
+                    <li>**CSS3:** Utilized for styling and visual presentation of the application.</li>
+                    <li>**JavaScript (ES6+):** Implements core frontend logic, interactivity, and client-side operations.</li>
+                </ul>
+                <h3>Backend:</h3>
+                <ul>
+                    <li>**Node.js & Express.js:** Used to create a robust RESTful API for handling data requests and responses.</li>
+                    <li>**MongoDB:** A NoSQL database for efficient storage of typing test results and sentences.</li>
+                    <li>**Mongoose ODM:** An Object Data Modeling (ODM) library for Node.js, simplifying interactions with MongoDB.</li>
+                    <li>**CORS Middleware:** Configured to enable secure cross-origin resource sharing between the frontend and backend.</li>
+                </ul>
+            </div>
+
+            <h2>Tutorial & GitHub Repository</h2>
+            <div class="project-links">
+                <a href="https://youtube.com/shorts/sTyqpNqSMRM?si=ixSwgCI5dQlfcKl7" target="_blank" class="button">Watch Tutorial</a>
+                <a href="https://github.com/garimaa001/Bug-Typing" target="_blank" class="button">View on GitHub</a>
+            </div>
+
+            <h2><u>Getting Started (Local Development)</u></h2>
+            <p>To set up and run the Bug-Typing game on your local machine for development or testing, follow these steps:</p>
+            <ol>
+                <li>**Clone the repository:**
+                    <pre><code>git clone https://github.com/garimaa001/Bug-Typing.git</code></pre>
+                </li>
+                <li>**Navigate to the project directory:**
+                    <pre><code>cd Bug-Typing</code></pre>
+                </li>
+                <li>**Backend Setup:**
+                    <ul>
+                        <li>Go to the backend folder: <pre><code>cd backend</code></pre></li>
+                        <li>Install dependencies: <pre><code>npm install</code></pre></li>
+                        <li>Create a <code>.env</code> file in the <code>backend</code> folder and add your MongoDB connection string (e.g., <code>MONGO_URI=mongodb://localhost:27017/typing_game</code>).</li>
+                        <li>Start the backend server: <pre><code>npm start</code></pre></li>
+                    </ul>
+                </li>
+                <li>**Frontend Setup:**
+                    <ul>
+                        <li>Open a new terminal and go to the frontend folder: <pre><code>cd frontend-react</code></pre></li>
+                        <li>Install dependencies: <pre><code>npm install</code></pre></li>
+                        <li>Start the React development server: <pre><code>npm start</code></pre></li>
+                    </ul>
+                </li>
+                <li>The frontend should automatically open in your browser, usually at <code>http://localhost:3000</code>.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MY PORTFOLIO. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
