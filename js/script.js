@@ -1,4 +1,5 @@
-// Typing effect
+// Changes while typing
+
 var typed = new Typed('#typed', {
     strings: [" HELLO! ", " Welcome to My Portfolio, ", " I am Garima Bisht"],
     typeSpeed: 50,
@@ -6,7 +7,7 @@ var typed = new Typed('#typed', {
     loop: true
   });
   
-  // Reveal section when Explore is clicked
+  // Reveals section when Explore is clicked
   document.querySelector(".btn").addEventListener("click", () => {
     document.querySelectorAll("section:not(.home)").forEach(sec => {
       sec.classList.add("show");
@@ -14,7 +15,7 @@ var typed = new Typed('#typed', {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   });
   
-  // Reveal section when nav links are clicked
+  // Reveals section when nav links are clicked
   document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", (e) => {
       const targetId = e.target.getAttribute("href").slice(1);
@@ -25,7 +26,7 @@ var typed = new Typed('#typed', {
     });
   });
   
-  // 💡 NEW: Project Filtering Logic
+  //  Project Filtering Logic
   document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
