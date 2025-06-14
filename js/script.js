@@ -5,7 +5,7 @@ var typed = new Typed('#typed', {
     typeSpeed: 50,
     backSpeed: 40,
     loop: true
-  });
+});
   
   // Reveals section when Explore is clicked
   document.querySelector(".btn").addEventListener("click", () => {
