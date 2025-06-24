@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug-Typing Game - Project Details</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1 class="logo">MY PORTFOLIO</h1>
+            <nav>
+                
+                <ul>
+                 
+                    <a href="../index.html#contact">● Connect</a>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main class="project-detail-main">
+        <section id="the litter coach" class="project-section-detail">
+            <h1><u><strong>THE LITTER COACH</strong></u></h1>
+
+            
+
+            <div class="project-summary">
+                <p> The Litter Coach is an AI-powered project utilizing YOLOv8 object detection</p> 
+                <p> to clarify the type of litter, as biodegradable and non-biodegradable to promote environmental cleanliness and aid waste management.</p>
+            </div>
+
+            <h2><u>Key Features</u></h2>
+            <ul>
+                <li>**AI-Powered Object Detection:** Utilizes machine learning to accurately identify various types of litter.</li>
+                <li>**YOLOv8 Model Integration:** Employs the high-performance YOLOv8 architecture for efficient and robust detection.</li>
+                <li>**Real-time Webcam Inference:** Capable of live object detection directly from a webcam feed.</li>
+                <li>**Litter Type Classification:** Identifies specific items like plastic bottles, banana peels, soda cans, and notebooks.</li>
+                <li>**Biodegradability Classification:** Categorizes detected litter as either "Biodegradable" or "Non-Biodegradable" based on its type.</li>
+                <li>**Environmental Contribution:** Aims to promote cleanliness, assist in waste segregation, and raise awareness about proper waste disposal.</li>
+            </ul>
+
+            <h2><u>Core Technologies Used</u></h2>
+            <div class="tech-stack">
+                <h3>Frontend:</h3>
+                <ul>
+                <li>**Python:** The primary programming language.</li>
+                <li>**YOLOv8 (You Only Look Once v8):** The cutting-edge machine learning model architecture for real-time object detection.</li>
+                <li>**Ultralytics Library:** The official Python library that provides the implementation and tools for using YOLOv8.</li>
+                <li>**OpenCV (cv2):** Used for handling webcam input, displaying the live video feed, drawing bounding boxes, and other image processing tasks.</li>
+                <li>**Git & GitHub:** For version control and hosting the project's codebase.</li>
+                </ul>
+            </div>
+
+            <h2>Tutorial & GitHub Repository</h2>
+            <div class="project-links">
+               <!-- <a href="https://youtube.com/shorts/sTyqpNqSMRM?si=ixSwgCI5dQlfcKl7" target="_blank" class="button">Watch Tutorial</a> -->
+                <a href="https://github.com/garimaa001/The-Litter-Coach" target="_blank" class="button">View on GitHub</a>
+            </div>
+
+        <h2><u>Getting Started (Local Development)</u></h2>
+            <p>To set up and run The Litter Coach project on your local machine, follow these steps:</p>
+        <ol>
+        <li>
+        <strong>Clone the repository:</strong>
+        <pre><code>git clone https://github.com/garimaa001/The-Litter-Coach.git</code></pre>
+             </li>
+             <li>
+        <strong>Navigate to the project directory:</strong>
+        <pre><code>cd The-Litter-Coach</code></pre>
+             </li>
+         <li>
+        <strong>Python Environment and Dependencies Setup:</strong>
+        <ul>
+            <li><strong>Create a Virtual Environment (Recommended):</strong>
+                <pre><code>python -m venv venv</code></pre>
+            </li>
+            <li><strong>Activate the Virtual Environment:</strong>
+                <ul>
+                    <li>On Windows (PowerShell/CMD):
+                        <pre><code>.\venv\Scripts\activate</code></pre>
+                    </li>
+                    <li>On macOS/Linux:
+                        <pre><code>source venv/bin/activate</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Install Required Python Packages:</strong>
+                <p>Ensure you have a <code>requirements.txt</code> file in your project root. </p>
+                   <p> If not, you might need to create it (e.g., by running <code>pip freeze > requirements.txt</code> or manually list them).</p>
+                <pre><code>pip install -r requirements.txt</code></pre>
+                <p>Alternatively, if you prefer to install directly (without a <code>requirements.txt</code>):</p>
+                <pre><code>pip install ultralytics opencv-python</code></pre>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Model Weights Setup:</strong>
+        <p>Ensure your trained YOLOv8 model weights (<code>best.pt</code>) </p>
+        <pre><code>runs/detect/litter_coach_detection_v13/weights/best.pt</code></pre>
+        <p>If your model is elsewhere, update the <code>model_path</code> variable in <code>webcam_predict.py</code> accordingly.</p>
+    </li>
+    <li>
+        <strong>Run Real-time Litter Detection:</strong>
+        <p>With your virtual environment activated, execute the main script:</p>
+        <pre><code>python webcam_predict.py</code></pre>
+        <p>Press <code>q</code> to quit the webcam feed.</p>
+    </li>
+</ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MY PORTFOLIO. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
