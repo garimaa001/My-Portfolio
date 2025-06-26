@@ -8,6 +8,7 @@ This repository not only serves as a showcase of my projects and skills but also
 
 **LinkedIn**: www.linkedin.com/in/garima-bisht01
 **Email**: bisht.gar14@gmail.com
+**Link**: https://garimaa001.github.io/My-Portfolio/
 
 
 Feel free to explore my work!
